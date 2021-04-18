@@ -39,7 +39,7 @@ a{
 
 .cv .cv-izquierda{
     width: 280px;
-    background: rgba(69, 223, 189, 0.664);
+    /* background: rgba(69, 223, 189, 0.664); */
 }
 
 .cv .cv-izquierda .cv-perfil{
@@ -48,6 +48,96 @@ a{
 }
 
 .cv .cv-izquierda .cv-perfil img{
+    /* border-radius: 50%; */
     width: 100%;
     height: 100%;
+}
+
+.cv .cv-izquierda .cv-contenido{
+    background: rgba(69, 223, 189, 0.664);
+    padding: 0 25px;
+}
+
+.cv .titulo{
+    margin-bottom: 20px;
+}
+
+.cv .cv-izquierda .negrita{
+    color:rgb(8, 71, 14);
+}
+
+.cv .cv-izquierda .regular{
+    color:rgba(0, 8, 78, 0.664)
+}
+
+.cv .cv-item{
+    padding: 25px 0;
+    border-bottom: 2px solid rgb(209, 17, 17);
+}
+
+.cv .cv-izquierda .cv-item:last-child,
+.cv .cv-derecha .cv-item:last-child{
+    border-bottom: 0px;
+}
+
+.cv .cv-izquierda ul li,
+.cv .cv-izquierda ul li a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cv .cv-izquierda ul li:last-child{
+    margin-bottom: 0px;
+}
+
+.cv .cv-izquierda ul li .icono{
+    width: 35px;
+    height: 35px;
+    background: white;
+    color: rgb(59, 0, 223);
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.cv .icono i{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.cv .cv-izquierda ul li .dato{
+    color: #555;
+}
+
+.cv .cv-izquierda .cv-habilidades ul li{
+    color: #555;
+    justify-content: space-between;
+}
+
+.cv .cv-izquierda .cv-habilidades ul li .nombre-habilidad{
+    width: 25%;
+}
+
+.cv .cv-izquierda .cv-habilidades ul li .progreso-habilidad{
+    width: 60%;
+    margin: 0 5px;
+    height: 5px;
+    background:white;
+    position: relative;
+}
+
+.cv .cv-izquierda .cv-habilidades ul li .progreso-habilidad span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: black;
+}
+
+.cv .cv-izquierda .cv-habilidades ul li .porcentaje-habilidad{
+    width: 15%;
 }
