@@ -75,8 +75,7 @@ a{
     border-bottom: 2px solid rgb(209, 17, 17);
 }
 
-.cv .cv-izquierda .cv-item:last-child,
-.cv .cv-derecha .cv-item:last-child{
+.cv .cv-izquierda .cv-item:last-child{
     border-bottom: 0px;
 }
 
@@ -95,7 +94,7 @@ a{
     width: 35px;
     height: 35px;
     background: white;
-    color: rgb(59, 0, 223);
+    color: cornflowerblue;
     border-radius: 50%;
     margin-right: 15px;
     font-size: 16px;
@@ -140,4 +139,128 @@ a{
 
 .cv .cv-izquierda .cv-habilidades ul li .porcentaje-habilidad{
     width: 15%;
+}
+
+/* PARTE DERECHA */
+.cv .cv-derecha{
+    width: 520px;
+    background: #FFFFFF;
+    padding: 25px;
+}
+
+.cv .cv-derecha .cv-item:last-child{
+    border-bottom: 0px;
+}
+
+.cv .cv-derecha .negrita{
+    color: cornflowerblue;
+}
+
+.cv .cv-derecha .cv-trabajo ul,
+.cv .cv-derecha .cv-certificaciones ul,
+.cv .cv-derecha .cv-educacion ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+.cv .cv-derecha ul li{
+    position: relative;
+}
+
+.cv .cv-derecha ul li .fecha{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.cv .cv-derecha ul li .informacion{
+    margin-bottom: 20px;
+}
+
+.cv .cv-derecha ul li:last-child .informacion{
+    margin-bottom: 0px;
+}
+
+.cv .cv-derecha .cv-trabajo ul li:before,
+.cv .cv-derecha .cv-certificaciones ul li:before,
+.cv .cv-derecha .cv-educacion ul li:before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 5px solid cornflowerblue;
+    ;
+}
+
+.cv .cv-derecha .cv-trabajo ul li:after{
+    content:"";
+    position:absolute;
+    top:15px;
+    left: -20px;
+    width: 5px;
+    height: 200px;
+    background:cornflowerblue;
+    ;
+}
+
+.cv .cv-derecha .cv-certificaciones ul li:after{
+    content:"";
+    position:absolute;
+    top:15px;
+    left: -20px;
+    width: 5px;
+    height: 90px;
+    background: cornflowerblue;
+}
+
+.cv .cv-derecha .cv-educacion ul li:after{
+    content:"";
+    position:absolute;
+    top:15px;
+    left: -20px;
+    width: 5px;
+    height: 200px;
+    background: cornflowerblue;
+}
+
+.cv .cv-derecha .cv-pasatiempos ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv .cv-derecha .cv-pasatiempos ul li{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    position: relative;
+    color: rgb(8, 71, 14);
+}
+
+.cv .cv-derecha .cv-pasatiempos ul li i{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.cv .cv-derecha .cv-pasatiempos ul li i{
+    font-size:30px;
+}
+
+.cv .cv-derecha .cv-pasatiempos ul li::before{
+    content:"";
+    position: absolute;
+    top: 40px;
+    right: -53px;
+    width: 50px;
+    height: 3px;
+    background: cornflowerblue;
+}
+
+.cv .cv-derecha .cv-pasatiempos ul li:last-child::before{
+    display: none;
 }
